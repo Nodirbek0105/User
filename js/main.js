@@ -25,7 +25,6 @@ elform.addEventListener("submit", function (evt) {
   elli.style.backgroundColor = "#fff";
   elli.style.padding = "0 1px";
   elli.style.margin = "10px";
-  elli.style.width = "260px";
   elli.style.height = "360px";
   elli.style.display = "flex";
   elli.style.alignItems = "center";
@@ -48,7 +47,7 @@ elform.addEventListener("submit", function (evt) {
   eldivlefttop.style.display = "flex"
   eldivlefttop.style.flexDirection = "column"
   eldivlefttop.style.gap = "10px"
-  elimgHeart.setAttribute("src", "./img/heart.png");
+  elimgHeart.setAttribute("src", "./img/heart.svg");
   eldivimg.classList.add("divImg")
   eldiv.classList.add("divParent")
   eldivleft.classList.add("divLeft")
@@ -56,10 +55,20 @@ elform.addEventListener("submit", function (evt) {
   eldivright.classList.add("divRight")
   elpname.classList.add("name")
   elptype.classList.add("type")
+  if(elinput3.value == ""){
+  elpkg.textContent = `${elinput3.value}`
+  }
+  if(elinput3.value !== ""){
+    elpkg.textContent = `${elinput3.value} kg`
+  }
+  if(elinput4.value == ""){
+  elpage.textContent = `${elinput4.value}`
+  }
+  if(elinput4.value !== ""){
+    elpage.textContent = `${elinput4.value} m`
+  }
   elpname.textContent = `${elinput1.value}`
   elptype.textContent = `${elinput2.value}`
-  elpkg.textContent = `${elinput3.value} kg`
-  elpage.textContent = `${elinput4.value} m`
   elUL.appendChild(elli);
   elli.appendChild(eldivimg);
   eldivimg.appendChild(elimg);
@@ -109,7 +118,6 @@ for (i = pokemons.length; i--; i >= 0) {
   elli.style.backgroundColor = "#fff";
   elli.style.padding = "0 1px";
   elli.style.margin = "10px";
-  elli.style.width = "260px";
   elli.style.height = "360px";
   elli.style.display = "flex";
   elli.style.alignItems = "center";
@@ -133,7 +141,7 @@ for (i = pokemons.length; i--; i >= 0) {
   eldivlefttop.style.flexDirection = "column"
   eldivlefttop.style.gap = "10px"
   elimg.setAttribute("src", element);
-  elimgHeart.setAttribute("src", "./img/heart.png");
+  elimgHeart.setAttribute("src", "./img/heart.svg");
   eldivimg.classList.add("divImg")
   eldiv.classList.add("divParent")
   eldivleft.classList.add("divLeft")
