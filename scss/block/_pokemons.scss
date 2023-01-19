@@ -6,7 +6,7 @@
 }
 form[data-form] {
   .parent {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 header {
@@ -14,6 +14,22 @@ header {
   align-items: center;
   justify-content: space-between;
   width: -o-moz-aviable;
+  flex-wrap: wrap;
+  gap:20px;
+
+  @media (max-width:530px) {
+    justify-content: center;
+    .parent img {
+      display: none;
+    }
+  }
+}
+form[data-form2] {
+  display: none;
+  min-width: 232px;
+  @media (max-width:530px) {
+    display: block;
+  }
 }
 ul {
   flex-wrap: wrap-reverse;
@@ -92,7 +108,8 @@ ul {
   justify-content: center;
 }
 
-form {
+form , 
+.parent {
   display: flex;
   justify-content: space-around;
   align-items: center;

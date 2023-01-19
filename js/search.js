@@ -6,7 +6,8 @@ var elSearch = document.querySelector('[data-search]');
 
 elSearch.addEventListener("click" , function(evt){
   evt.preventDefault()
-  elform2.classList.toggle("d-n")
+  elform2.style.display = "block"
+  elSearch.classList.add("d-n")
 })
 
 elform2.addEventListener("submit", function (evt) {
