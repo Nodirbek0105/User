@@ -10,72 +10,26 @@
     <link rel="website icon" type="svg" href="./img/pokemon_logo 1.svg">
   </head>
   <body>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Roboto" , sans-serif;
-      }
-      ul {
-        flex-wrap: wrap-reverse;
-        flex-direction: row-reverse;
-      }
-      body {
-        background-color: #ffd845;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-      }
-      .divImg {
-        border-bottom: 3px solid !important;
-        border-top: transparent !important;
-        border-left: transparent !important;
-        border-right: transparent !important;
-      }
-      .divRight {
-        width: 10%;
-        height: 100%;
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-      }
-      .divLeftBottom {
-        display: flex;
-        align-items: center;
-        font-weight: 700;
-        position: relative;
-        gap: 40%;
-      }
-      .divLeft {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-      .divParent {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .name {
-        font-size: 18px;
-        font-weight: 700;
-      }
-      .type {
-        font-weight: 600;
-        font-size: 16px;
-      }
-    </style>
-    <form data-form2>
-      <input type="search" data-input5="">
-      <button type="submit" class="btn-primary">search</button>
-    </form>
-    <!-- <form data-form3="">
+    <div class="container">
+      <header>
+        <div class="logo-div">
+          <a href="./index.html">
+            <h1>
+              <img src="./img/pokemon_logo 1.svg" alt="">
+            </h1>
+          </a>
+        </div>
+        <form data-form2 class="d-n">
+          <input type="search" data-input5="">
+          <button type="submit" class="btn-primary">search</button>
+        </form>
+        <div class="search-div">
+          <img src="./img/search.svg" alt="" data-search="">
+        </div>
+      </header>
+      <main></main>
+    </div>
+     <!-- <form data-form3="">
       <select data-select name="" id="">
         <option value="Grass">Grass</option>
         <option value="Poison">Poison</option>
@@ -94,7 +48,7 @@
         <option value="Dragon">Dragon</option>
       </select>
       <button type="submit" class="btn-primary">search with type</button>
-    </form> -->
+    </form>  -->
 
     <form data-form>
       <div class="parent">
@@ -113,8 +67,8 @@
         <div>
           <input data-input4 placeholder="Height" />
         </div>
+        <button type="submit" class="btn-primary">add new pokemon</button>
       </div>
-      <button type="submit" class="btn-primary">add new pokemon</button>
     </form>
     <ul data-ul=""></ul>
     <script src="./js/pokedex.js"></script>
